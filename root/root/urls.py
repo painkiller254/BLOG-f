@@ -11,4 +11,5 @@ urlpatterns = [
     (r'^weblog/links/', include('coltrane.urls.links')),
     (r'^weblog/tags/', include('coltrane.urls.tags')),
     (r'^weblog/', include('coltrane.urls.entries')),
+    (r'^comments/', include('django.contrib.comments.urls.comments')),
 ]

@@ -39,3 +39,14 @@ class LatestContentNode:
 
 register = template.Library()
 register.tag('get_latest_content', do_latest_content)
+
+
+from django import template
+from markdown import markdown
+
+def safe_markdown(value):
+    return markdown(value, safe_mode=True)
+
+register = template.Library()
+register.filter(safe_markdown)
+

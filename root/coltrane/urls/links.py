@@ -1,4 +1,4 @@
-from django.conf.urls.defaults import *
+from django.conf.urls import *
 from coltrane.models import Link
 link_info_dict = {
     'queryset': Link.objects.all(),

@@ -1,5 +1,6 @@
 from django.conf.urls import *
 from coltrane.models import Entry
+from django.urls import patterns
 entry_info_dict = {
     'queryset': Entry.live.all(),
     'date_field': 'pub_date',
